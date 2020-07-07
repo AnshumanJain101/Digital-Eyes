@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.gms.samples.vision.ocrreader"
+    android:installLocation="auto">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="OcrReaderApp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".ReceiverActivity" />
+        <activity android:name=".ObjectDetectionActivity" />
+        <activity
+            android:name=".FileActivity"
+            android:label="@string/title_activity_file"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".OcrCaptureActivity" />
+        <activity android:name=".NotifActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <service
+            android:name=".NotificationService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
