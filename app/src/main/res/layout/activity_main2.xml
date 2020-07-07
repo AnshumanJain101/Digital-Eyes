@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#33D3D3"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPEECH RATE"
+            android:background="#226e6e"
+            android:textColor="#fff"
+            android:id="@+id/srate"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEXT SIZE"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:background="#226e6e"
+            android:layout_gravity="right"
+            android:id="@+id/tsize"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHARE"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:background="#226e6e"
+            android:layout_gravity="right"
+            android:id="@+id/tshare"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/login"
+        android:background="#226e6e"
+        android:textColor="#fff"
+        android:text="camera"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:background="#226e6e"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:text="notif"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/auto_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#fff"
+            android:text="Auto Focus"
+            android:textSize="15dp" />
+
+        <Switch
+            android:id="@+id/use_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="#fff"
+            android:text="Flash"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/file"
+        android:background="#226e6e"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:text="file"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/object_detect"
+        android:background="#226e6e"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:text="ObjDetect"/>
+
+</LinearLayout>
