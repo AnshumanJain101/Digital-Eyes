@@ -20,16 +20,16 @@
         android:label="OcrReaderApp"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name=".SplashActivity"></activity>
-        <activity android:name=".ReceiverActivity" />
-        <activity android:name=".ObjectDetectionActivity" />
+        <activity android:name="com.google.android.gms.samples.vision.ocrreader.SplashActivity"></activity>
+        <activity android:name="com.google.android.gms.samples.vision.ocrreader.ReceiverActivity" />
+        <activity android:name="com.google.android.gms.samples.vision.ocrreader.ObjectDetectionActivity" />
         <activity
-            android:name=".FileActivity"
+            android:name="com.google.android.gms.samples.vision.ocrreader.FileActivity"
             android:label="@string/title_activity_file"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".OcrCaptureActivity" />
-        <activity android:name=".NotifActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity" />
+
+        <activity android:name="com.google.android.gms.samples.vision.ocrreader.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,7 +45,7 @@
             android:value="ocr" />
 
         <service
-            android:name=".NotificationService"
+            android:name="com.google.android.gms.samples.vision.ocrreader.NotificationService"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
                 <action android:name="android.service.notification.NotificationListenerService" />

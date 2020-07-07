@@ -19,8 +19,6 @@ import android.widget.SeekBar;
 
 import java.util.Locale;
 
-import static android.provider.Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS;
-
 public class MainActivity extends AppCompatActivity  {
     Button login,register,file,objectdetect;
 

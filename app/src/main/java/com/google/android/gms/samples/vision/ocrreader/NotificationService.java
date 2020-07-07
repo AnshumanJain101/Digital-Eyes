@@ -1,16 +1,12 @@
 package com.google.android.gms.samples.vision.ocrreader;
 
-import android.app.Notification;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
-
-import java.io.ByteArrayOutputStream;
 
 public class NotificationService extends NotificationListenerService {
 

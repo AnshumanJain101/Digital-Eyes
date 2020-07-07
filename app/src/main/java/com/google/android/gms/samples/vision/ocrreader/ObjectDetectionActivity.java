@@ -1,16 +1,7 @@
 package com.google.android.gms.samples.vision.ocrreader;
 
-import android.graphics.Rect;
-import android.media.Image;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
-
-import com.google.android.gms.tasks.OnFailureListener;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class ObjectDetectionActivity extends AppCompatActivity {
 
