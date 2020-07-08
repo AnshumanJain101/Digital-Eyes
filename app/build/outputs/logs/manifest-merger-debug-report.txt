@@ -375,17 +375,17 @@ MERGED from [com.google.android.gms:play-services-wearable-license:12.0.1] C:\Us
 	android:theme
 		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:22:9-47
 activity#com.google.android.gms.samples.vision.ocrreader.SplashActivity
-ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:23:9-61
+ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:23:9-108
 	android:name
-		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:23:19-49
+		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:23:19-96
 activity#com.google.android.gms.samples.vision.ocrreader.ReceiverActivity
-ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:24:9-54
+ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:24:9-101
 	android:name
-		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:24:19-51
+		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:24:19-98
 activity#com.google.android.gms.samples.vision.ocrreader.ObjectDetectionActivity
-ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:25:9-61
+ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:25:9-108
 	android:name
-		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:25:19-58
+		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:25:19-105
 activity#com.google.android.gms.samples.vision.ocrreader.FileActivity
 ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:26:9-29:50
 	android:label
@@ -393,19 +393,15 @@ ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-cod
 	android:theme
 		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:29:13-47
 	android:name
-		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:27:13-41
+		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:27:13-88
 activity#com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity
-ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:30:9-56
+ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:30:9-103
 	android:name
-		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:30:19-53
-activity#com.google.android.gms.samples.vision.ocrreader.NotifActivity
-ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:31:9-51
-	android:name
-		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:31:19-48
+		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:30:19-100
 activity#com.google.android.gms.samples.vision.ocrreader.MainActivity
 ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:32:9-38:20
 	android:name
-		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:32:19-47
+		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:32:19-94
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:33:13-37:29
 action#android.intent.action.MAIN
@@ -435,7 +431,7 @@ ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-cod
 	android:permission
 		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:49:13-87
 	android:name
-		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:48:13-48
+		ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:48:13-95
 intent-filter#action:name:android.service.notification.NotificationListenerService
 ADDED from C:\Users\LENOVO\Downloads\android-vision-master\visionSamples\ocr-codelab\ocr-reader-start\app\src\main\AndroidManifest.xml:50:13-52:29
 action#android.service.notification.NotificationListenerService

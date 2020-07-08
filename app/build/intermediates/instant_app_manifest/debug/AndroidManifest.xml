@@ -52,7 +52,6 @@
             android:label="@string/title_activity_file"
             android:theme="@style/NoActionBar" />
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.OcrCaptureActivity" />
-        <activity android:name="com.google.android.gms.samples.vision.ocrreader.NotifActivity" />
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
