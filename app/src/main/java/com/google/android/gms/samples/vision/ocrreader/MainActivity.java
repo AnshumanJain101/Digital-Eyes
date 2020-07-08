@@ -17,10 +17,13 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.SeekBar;
 
+import com.majeur.cling.Cling;
+import com.majeur.cling.ClingManager;
+
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity  {
-    Button login,register,file,objectdetect;
+    Button textDetect,file,objectdetect;
 
     private CompoundButton autoFocus;
     private CompoundButton useFlash;
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity  {
     int speechrate;
     private TextToSpeech tts;
     private AlertDialog enableNotificationListenerAlertDialog;
+    private static final String FOR_FIRST_TIME="for first time";
     private static final String ENABLED_NOTIFICATION_LISTENERS = "enabled_notification_listeners";
     private static final String ACTION_NOTIFICATION_LISTENER_SETTINGS = "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS";
 
@@ -76,12 +80,11 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        login=(Button) findViewById(R.id.login);
-        register=(Button) findViewById(R.id.register);
-        file=(Button) findViewById(R.id.file);
-        objectdetect=(Button) findViewById(R.id.object_detect);
-        autoFocus = (CompoundButton) findViewById(R.id.auto_focus);
-        useFlash = (CompoundButton) findViewById(R.id.use_flash);
+        textDetect=(Button) findViewById(R.id.text_detection_button);
+        file=(Button) findViewById(R.id.read_file_button);
+        objectdetect=(Button) findViewById(R.id.detect_object_button);
+        autoFocus = (CompoundButton) findViewById(R.id.auto_focus_id);
+        useFlash = (CompoundButton) findViewById(R.id.auto_flash_switch_id);
         srate = (Button) findViewById(R.id.srate);
         tshare = (Button) findViewById(R.id.tshare);
 
@@ -103,21 +106,20 @@ public class MainActivity extends AppCompatActivity  {
             enableNotificationListenerAlertDialog.show();
         }
 
-        login.setOnClickListener(new View.OnClickListener() {
+        SharedPreferences prefs=getSharedPreferences("com.google.android.gms.samples.ocrreader",MODE_PRIVATE);
+        if(prefs.getBoolean("FOR_FIRST_TIME",true)){
+            showTut();
+            prefs.edit().putBoolean("FOR_FIRST_TIME",false).commit();
+        }
+
+        textDetect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                tts.speak("Text Detection Started",TextToSpeech.QUEUE_FLUSH,null,"DEFAULT");
                 Intent intent2=new Intent(MainActivity.this, OcrCaptureActivity.class);
                 intent2.putExtra(OcrCaptureActivity.AutoFocus, autoFocus.isChecked());
                 intent2.putExtra(OcrCaptureActivity.UseFlash, useFlash.isChecked());
                 startActivity(intent2);
-            }
-        });
-
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //startActivity(new Intent(MainActivity.this, NotifActivity.class));
             }
         });
 
@@ -131,7 +133,10 @@ public class MainActivity extends AppCompatActivity  {
         objectdetect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ObjectDetectionActivity.class));
+                tts.speak("Object Detection Started",TextToSpeech.QUEUE_FLUSH,null,"DEFAULT");
+                Intent intent1=new Intent(MainActivity.this,DetectorActivity.class);
+                startActivity(intent1);
+                //startActivity(new Intent(MainActivity.this, ObjectDetectionActivity.class));
             }
         });
         srate.setOnClickListener(new View.OnClickListener() {
@@ -154,6 +159,66 @@ public class MainActivity extends AppCompatActivity  {
         });
 
     }
+
+    private void showTut() {
+        //Toast.makeText(this.getApplicationContext(),"Here You Go..",Toast.LENGTH_LONG).show();
+        ClingManager mClingManager=new ClingManager(this);
+
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("Welcome to eSPEAKK!")
+                .setContent("An application that will read everything for you")
+                .build());
+        String content = "Help read out any text to you\n\nRead notifications for you\n\nDetect any object near you";
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("This app can...")
+                .setContent(content)
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("SPEECH RATE")
+                .setContent("Set the text speech rate")
+                .setTarget(new com.majeur.cling.ViewTarget(this, R.id.srate))
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("TEXT SIZE")
+                .setContent("Edit text size here")
+                .setTarget(new com.majeur.cling.ViewTarget(this, R.id.text_size_button))
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("Speak File")
+                .setContent("Tap here to speak the file contents")
+                .setTarget(new com.majeur.cling.ViewTarget(this, R.id.read_file_button))
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("AutoFocus")
+                .setContent("Slide to enable/disable auto focus")
+                .setTarget(new com.majeur.cling.ViewTarget(this, R.id.auto_focus_id))
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("Flash")
+                .setContent("Slide this to enable/disable flash on image")
+                .setTarget(new com.majeur.cling.ViewTarget(this, R.id.auto_flash_switch_id))
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("Detect Text")
+                .setContent("Press this to detect any text on image")
+                .setTarget(new com.majeur.cling.ViewTarget(this, R.id.text_detection_button))
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("Detect Object")
+                .setContent("Detect Object by tapping here")
+                .setTarget(new com.majeur.cling.ViewTarget(this, R.id.detect_object_button))
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("Read Notification")
+                .setContent("Allow These app To listen all notifications")
+                .build());
+        mClingManager.addCling(new Cling.Builder(this)
+                .setTitle("Go ahead..")
+                .setContent("You are ready to use app now")
+                .build());
+        mClingManager.start();
+    }
+
     private boolean isNotificationServiceEnabled(){
         String pkgName = getPackageName();
         final String flat = Settings.Secure.getString(getContentResolver(),

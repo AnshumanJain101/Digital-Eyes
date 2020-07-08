@@ -33,7 +33,7 @@
             android:layout_marginLeft="20dp"
             android:background="#226e6e"
             android:layout_gravity="right"
-            android:id="@+id/tsize"
+            android:id="@+id/text_size_button"
             />
         <Button
             android:layout_width="wrap_content"
@@ -52,19 +52,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:id="@+id/login"
+        android:id="@+id/text_detection_button"
         android:background="#226e6e"
         android:textColor="#fff"
-        android:text="camera"/>
+        android:text="Detect Text"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/register"
-        android:background="#226e6e"
-        android:textColor="#fff"
-        android:layout_marginTop="10dp"
-        android:text="notif"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,7 +67,7 @@
         android:orientation="horizontal">
 
         <Switch
-            android:id="@+id/auto_focus"
+            android:id="@+id/auto_focus_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
@@ -83,7 +76,7 @@
             android:textSize="15dp" />
 
         <Switch
-            android:id="@+id/use_flash"
+            android:id="@+id/auto_flash_switch_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
@@ -96,7 +89,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/file"
+        android:id="@+id/read_file_button"
         android:background="#226e6e"
         android:textColor="#fff"
         android:layout_marginTop="10dp"
@@ -105,7 +98,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/object_detect"
+        android:id="@+id/detect_object_button"
         android:background="#226e6e"
         android:textColor="#fff"
         android:layout_marginTop="10dp"

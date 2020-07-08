@@ -29,5 +29,7 @@
     <string name="notification_listener_service_explanation">For the app to work you need to enable the notification listener service. Enable it now?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="tfe_od_camera_error">Error regarding camera support[CHAR_LIMIT=40]</string>
+    <string name="tfe_od_app_name">eSPEAKK</string>
 
 </resources>

@@ -42,10 +42,17 @@
         android:icon="@drawable/icon"
         android:label="OcrReaderApp"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.AppCompat" >
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.SplashActivity" />
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.ReceiverActivity" />
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.ObjectDetectionActivity" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.ocrreader.DetectorActivity"
+            android:label="@string/tfe_od_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" >
+        </activity>
         <activity
             android:name="com.google.android.gms.samples.vision.ocrreader.FileActivity"
             android:label="@string/title_activity_file"

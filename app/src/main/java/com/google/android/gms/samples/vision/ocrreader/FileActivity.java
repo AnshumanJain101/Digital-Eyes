@@ -46,8 +46,6 @@ public class FileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_file);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
         FloatingActionButton fab = findViewById(R.id.fab);
         outputTextView = findViewById(R.id.output_text);
         outputTextView.setMovementMethod(new ScrollingMovementMethod());

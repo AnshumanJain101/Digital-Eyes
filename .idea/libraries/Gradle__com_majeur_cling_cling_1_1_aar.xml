@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.majeur.cling:cling:1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c1bbd158bf34b89d93a517e5c37f36c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c1bbd158bf34b89d93a517e5c37f36c/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.majeur.cling/cling/1.1/fbad0b95842e1860acdffe2b2a790da6ee894c1d/cling-1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.majeur.cling/cling/1.1/a81f5c3b8f6941b7babeb2d5346f139088f82727/cling-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
