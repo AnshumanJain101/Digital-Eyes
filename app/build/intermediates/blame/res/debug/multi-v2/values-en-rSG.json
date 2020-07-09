@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\LENOVO\\Downloads\\android-vision-master\\visionSamples\\ocr-codelab\\ocr-reader-start\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
+            "outputFile": "C:\\Users\\MIHIR LADDHA\\OneDrive\\Desktop\\eSPEAKK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\0a64962f800d9eb2e0dca91718f1074b\\res\\values-en-rSG\\values.xml",
+                    "source": "C:\\Users\\MIHIR LADDHA\\.gradle\\caches\\transforms-2\\files-2.1\\09aa7cf8938296a27481128a51384594\\res\\values-en-rSG\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-messaging:12.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e0b89299cd1c5bd7d650454de55fce5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e0b89299cd1c5bd7d650454de55fce5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df50a51c9ee0f91e3a85e5a3efaebff6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df50a51c9ee0f91e3a85e5a3efaebff6/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

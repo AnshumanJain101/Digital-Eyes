@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\LENOVO\\Downloads\\android-vision-master\\visionSamples\\ocr-codelab\\ocr-reader-start\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "C:\\Users\\MIHIR LADDHA\\OneDrive\\Desktop\\eSPEAKK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-2\\files-2.1\\03c0abaf8125d20de3e8b61dcec4bf48\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\MIHIR LADDHA\\.gradle\\caches\\transforms-2\\files-2.1\\1b6d990ecb20b1392ad75d8f7efd0ea8\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

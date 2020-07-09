@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.google.android.gms.samples.vision.ocrreader"
     android:installLocation="auto">
 
@@ -19,10 +20,18 @@
         android:icon="@drawable/icon"
         android:label="OcrReaderApp"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat">
+        android:theme="@style/Theme.AppCompat"
+        tools:replace="android:label">
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.SplashActivity"></activity>
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.ReceiverActivity" />
         <activity android:name="com.google.android.gms.samples.vision.ocrreader.ObjectDetectionActivity" />
+        <activity
+            android:name=".DetectorActivity"
+            android:label="@string/tfe_od_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"
+            >
+        </activity>
         <activity
             android:name="com.google.android.gms.samples.vision.ocrreader.FileActivity"
             android:label="@string/title_activity_file"
